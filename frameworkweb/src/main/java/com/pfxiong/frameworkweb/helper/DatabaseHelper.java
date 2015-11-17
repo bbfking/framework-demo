@@ -9,6 +9,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
+
+import com.pfxiong.frameworkweb.util.CollectionUtil;
+import com.pfxiong.frameworkweb.util.PropsUtil;
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
@@ -16,8 +19,7 @@ import org.apache.commons.dbutils.handlers.BeanListHandler;
 import org.apache.commons.dbutils.handlers.MapListHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.smart4j.chapter2.util.CollectionUtil;
-import org.smart4j.chapter2.util.PropsUtil;
+
 
 /**
  * 数据库助手类
@@ -29,7 +31,9 @@ public final class DatabaseHelper {
     private static final ThreadLocal<Connection> CONNECTION_HOLDER;
 
     private static final QueryRunner QUERY_RUNNER;
-
+    /**
+     * 数据库连接池
+     */
     private static final BasicDataSource DATA_SOURCE;
 
     static {

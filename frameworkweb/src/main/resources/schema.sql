@@ -1,3 +1,5 @@
+drop table if exists CUSTOMER;
+
 CREATE TABLE `CUSTOMER` (
     `ID` BIGINT(20) NOT NULL AUTO_INCREMENT,
     `NAME` VARCHAR(255) DEFAULT NULL,
@@ -7,6 +9,3 @@ CREATE TABLE `CUSTOMER` (
     `REMARK` TEXT,
     PRIMARY KEY (`ID`)
 ) ENGINE=INNODB DEFAULT CHARSET=UTF8;
-
-INSERT INTO CUSTOMER VALUES('1', 'customer1', 'Jack', '13512345678', 'jack@gmail.com', null);
-INSERT INTO CUSTOMER VALUES('2', 'customer2', 'Rose', '13612345678', 'rose@gmail.com', null);
