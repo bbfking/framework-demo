@@ -13,6 +13,8 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/customer_edit")
 public class CustomerEditServlet extends HttpServlet {
 
+    private static final long serialVersionUID = -1911415527140073609L;
+
     /**
      * 进入 编辑客户 界面
      */

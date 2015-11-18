@@ -17,6 +17,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/customer")
 public class CustomerServlet extends HttpServlet {
 
+    private static final long serialVersionUID = 2927458514475872440L;
     private CustomerService customerService;
 
     @Override

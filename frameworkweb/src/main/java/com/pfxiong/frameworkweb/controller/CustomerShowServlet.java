@@ -13,6 +13,8 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/customer_show")
 public class CustomerShowServlet extends HttpServlet {
 
+    private static final long serialVersionUID = -4937555947860488931L;
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         // TODO

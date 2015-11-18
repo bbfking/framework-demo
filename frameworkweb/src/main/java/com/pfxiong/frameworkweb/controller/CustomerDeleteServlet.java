@@ -13,6 +13,8 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/customer_delete")
 public class CustomerDeleteServlet extends HttpServlet {
 
+    private static final long serialVersionUID = -3237223906644045804L;
+
     /**
      * 处理 删除客户 请求
      */

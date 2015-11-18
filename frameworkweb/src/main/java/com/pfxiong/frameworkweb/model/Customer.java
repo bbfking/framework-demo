@@ -6,7 +6,7 @@ import java.io.Serializable;
  * Created by pfXiong on 2015/11/17.
  * 客户实体
  */
-public class Customer implements Serializable{
+public class Customer implements Serializable {
 
     private static final long serialVersionUID = 2807573308243484482L;
     private long id;
