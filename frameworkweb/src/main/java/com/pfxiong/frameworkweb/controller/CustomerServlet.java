@@ -1,13 +1,15 @@
 package com.pfxiong.frameworkweb.controller;
 
+import com.pfxiong.frameworkweb.model.Customer;
+import com.pfxiong.frameworkweb.service.CustomerService;
+
 import java.io.IOException;
+import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import org.smart4j.chapter2.model.Customer;
-import org.smart4j.chapter2.service.CustomerService;
 
 /**
  * 进入 客户列表 界面

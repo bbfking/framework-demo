@@ -24,8 +24,8 @@ public class CustomerServiceTest {
 
     @Before
     public void init() throws Exception {
-        DatabaseHelper.executeSqlFile("classpath:resources/schema.sql");
-        DatabaseHelper.executeSqlFile("classpath:resources/test-data.sql");
+        DatabaseHelper.executeSqlFile("schema.sql");
+        DatabaseHelper.executeSqlFile("test-data.sql");
     }
 
     @Test

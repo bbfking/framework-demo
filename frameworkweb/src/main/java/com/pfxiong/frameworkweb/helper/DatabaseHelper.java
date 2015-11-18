@@ -1,8 +1,6 @@
 package com.pfxiong.frameworkweb.helper;
 
-import java.io.BufferedReader;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -196,16 +194,22 @@ public final class DatabaseHelper {
         InputStream is = Thread.currentThread().getContextClassLoader().getResourceAsStream(filePath);
         BufferedReader reader = new BufferedReader(new InputStreamReader(is));
         try {
-            String sql;
-            while ((sql = reader.readLine()) != null) {
-                executeUpdate(sql);
-            }
+            String sql = getSql(reader);
+            executeUpdate(sql);
         } catch (Exception e) {
             LOGGER.error("execute sql file failure", e);
             throw new RuntimeException(e);
         }
     }
-
+    private static String getSql(BufferedReader reader) throws IOException {
+        StringBuilder sql = new StringBuilder();
+        String temp;
+        while ((temp = reader.readLine()) != null) {
+            sql.append(temp);
+            sql.append(" ");
+        }
+        return  sql.toString();
+    }
     private static String getTableName(Class<?> entityClass) {
         return entityClass.getSimpleName();
     }
