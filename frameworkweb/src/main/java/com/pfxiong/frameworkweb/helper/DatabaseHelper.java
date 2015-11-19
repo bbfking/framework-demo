@@ -51,7 +51,7 @@ public final class DatabaseHelper {
         DATA_SOURCE.setUsername(username);
         DATA_SOURCE.setPassword(password);
     }
-
+    private DatabaseHelper(){}
     /**
      * 获取数据库连接
      */
