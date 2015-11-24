@@ -1,6 +1,7 @@
 package com.pfxiong.framework.core.bean;
 
-import com.pfxiong.frameworkweb.util.CastUtil;
+
+import com.pfxiong.framework.core.util.CastUtil;
 
 import java.util.Map;
 
@@ -21,7 +22,7 @@ public class Param {
         return CastUtil.castLong(paramMap.get(name));
     }
 
-    public Map<String, Object> getMap(){
+    public Map<String, Object> getParamMap(){
         return paramMap;
     }
 }

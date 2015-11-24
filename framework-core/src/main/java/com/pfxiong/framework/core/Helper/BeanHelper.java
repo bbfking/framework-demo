@@ -12,11 +12,11 @@ import java.util.stream.Collectors;
  * Created by pfxiong on 2015/11/22 23:43.
  */
 public class BeanHelper {
-    private static final Map<Class<?>,Object> BEAN_MAP = new HashMap<>();
+    private static final Map<Class<?>,Object> BEAN_MAP;
 
     static {
         Set<Class<?>> beanSet = ClassHelper.getBeanSet();
-        beanSet.parallelStream().collect(Collectors.toMap(c->c, b->ReflectionUtil.newInstance(b)));
+        BEAN_MAP = beanSet.parallelStream().collect(Collectors.toMap(c->c, b->ReflectionUtil.newInstance(b)));
     }
 
     /**

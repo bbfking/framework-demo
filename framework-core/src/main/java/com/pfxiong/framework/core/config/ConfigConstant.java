@@ -11,5 +11,5 @@ public interface ConfigConstant {
     String JDBC_PASSWORD = "jdbc.password";
     String APP_BASE_PACKAGE = "app.base.package";
     String APP_JSP_PATH = "app.jsp.path";
-    String APP_ASSET_PATH = "APP.ASSET.PATH";
+    String APP_ASSET_PATH = "app.asset.path";
 }
