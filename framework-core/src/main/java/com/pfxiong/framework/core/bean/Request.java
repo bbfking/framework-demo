@@ -6,7 +6,7 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
 /**
  * 封装请求信息
  *
- * @author huangyong
+ * @author  pfxiong
  * @since 1.0.0
  */
 public class Request {

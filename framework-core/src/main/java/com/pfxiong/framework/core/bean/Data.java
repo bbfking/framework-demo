@@ -3,7 +3,7 @@ package com.pfxiong.framework.core.bean;
 /**
  * 返回数据对象
  *
- * @author huangyong
+ * @author  pfxiong
  * @since 1.0.0
  */
 public class Data {

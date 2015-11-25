@@ -8,7 +8,7 @@ import java.util.Map;
 /**
  * 请求参数对象
  *
- * @author huangyong
+ * @author  pfxiong
  * @since 1.0.0
  */
 public class Param {
